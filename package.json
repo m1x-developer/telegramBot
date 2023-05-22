@@ -2,22 +2,30 @@
   "name": "tgbot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node src/main.ts",
-    "dev": "cross-env NODE_ENV=development nodemon src/main.ts"
+    "start": "cross-env NODE_ENV=production node src/main.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/main.js"
   },
   "keywords": [],
   "author": "Maks K.",
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "nodemon": "^2.0.22",
-    "typescript": "^5.0.4"
+    "nodemon": "^2.0.22"
   },
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "axios": "^1.4.0",
     "config": "^3.3.9",
-    "telegraf": "^4.12.2"
+    "fluent-ffmpeg": "^2.1.2",
+    "jimp": "^0.22.8",
+    "ocr-space-api": "^1.0.1",
+    "ocr-space-api-wrapper": "^2.2.0",
+    "openai": "^3.2.1",
+    "sharp": "^0.32.1",
+    "telegraf": "^4.12.2",
+    "tesseract.js": "^4.0.6"
   }
 }
